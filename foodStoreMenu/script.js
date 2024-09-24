@@ -10,7 +10,6 @@ dropdown.forEach((i) => {
         }else{
             box  = e.target;
         }
-        console.log(box);
         
         if(dropdownContent.style.display === "block") {
             dropdownContent.style.display = "none";
