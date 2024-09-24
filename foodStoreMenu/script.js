@@ -4,13 +4,20 @@ dropdown.forEach((i) => {
     i.addEventListener("click", function (e) {
         this.classList.toggle("active");
         const dropdownContent = this.nextElementSibling;
-        let text  = e.target.id;
+        let box;
+        if(e.target.classList[0] === 'fa-solid'){
+            box = e.target.parentElement;
+        }else{
+            box  = e.target;
+        }
+        console.log(box);
+        
         if(dropdownContent.style.display === "block") {
             dropdownContent.style.display = "none";
-            e.target.innerHTML = `${text} <i class="fa-solid fa-chevron-down"></i>`
+            box.innerHTML = `${box.id} <i class="fa-solid fa-chevron-down"></i>`
         } else{
             dropdownContent.style.display = "block";
-            e.target.innerHTML = `${text} <i class="fa-solid fa-chevron-up"></i>`
+            box.innerHTML = `${box.id} <i class="fa-solid fa-chevron-up"></i>`
         }
     });
 })
