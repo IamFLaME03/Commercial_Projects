@@ -5,13 +5,12 @@ dropdown.forEach((i) => {
         this.classList.toggle("active");
         const dropdownContent = this.nextElementSibling;
         let text  = e.target.id;
-        
         if(dropdownContent.style.display === "block") {
             dropdownContent.style.display = "none";
-            i.innerHTML = `${text} <i class="fa-solid fa-chevron-down"></i>`
+            e.target.innerHTML = `${text} <i class="fa-solid fa-chevron-down"></i>`
         } else{
             dropdownContent.style.display = "block";
-            i.innerHTML = `${text} <i class="fa-solid fa-chevron-up"></i>`
+            e.target.innerHTML = `${text} <i class="fa-solid fa-chevron-up"></i>`
         }
     });
 })
