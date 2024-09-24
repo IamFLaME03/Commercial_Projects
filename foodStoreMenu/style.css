@@ -14,6 +14,7 @@ body {
     --darkGray: #373330;
     --black: #040411;
     --yellow: #ffdc2b;
+    --blue: #0eccf2;
 }
 
 .heading {
@@ -28,10 +29,11 @@ body {
     font-size: 30px;
 }
 .four{
-    color: aqua;
+    color: var(--blue);
 }
 .main {
     margin: 10px;
+    margin-bottom: 50px;
 }
 
 .dropdown-btn {
@@ -57,7 +59,7 @@ body {
     font-weight: bolder;
 }
 .dropdown-container {
-    /* display: none; */
+    display: none;
     font-size: 14px;
     margin: 0px 2px;
 }
@@ -77,17 +79,24 @@ body {
 }
 .name{
     color: var(--orange);
+    max-width: 320px;
+}
+strong{
+    color: var(--white);
 }
 .price{
     color: var(--yellow);
 }
+.water > .name{
+    color: var(--blue);
+}
 footer {
     color: var(--white);
     background-color: var(--darkGray);
-    padding: 5px;
+    padding: 7px;
     position: fixed;
     bottom: 0;
-    font-size: 8px;
+    font-size: 10px;
     width: 100%;
     text-align: center;
 }
