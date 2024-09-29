@@ -28,9 +28,20 @@ body {
     letter-spacing: 3px;
     font-size: 30px;
 }
+.logoImg{
+    object-fit:contain;
+    height: 64px;
+}
+@media only screen and (max-width: 355px) {
+    .heading{
+        letter-spacing: 0px;
+        font-size: 20px;
+    }
+}
 .four{
     color: var(--blue);
 }
+
 .main {
     margin: 10px;
     margin-bottom: 50px;
